@@ -19,41 +19,38 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <header class="header">
+    <header class="header" id="header">
       <div class="container">
         <div class="h-container">
           <nav class="H-nav">
-            <img class="logo" src="./style/images/icons/logo.svg" alt="logo" />
+            <img class="logo" src="./images/logo.svg" alt="logo" />
             <ul class="header-menu">
-              <li><a class="links" href="#">Про нас</a></li>
-              <li><a class="links" href="#">Чому ми</a></li>
-              <li><a class="links" href="#">Наші процедури</a></li>
-              <li><a class="links" href="#">Контакти</a></li>
+              <li><a class="links" href="#transform-section">Про нас</a></li>
+              <li><a class="links" href="#why-section">Чому ми</a></li>
+              <li><a class="links" href="#procedures-section">Наші процедури</a></li>
+              <li><a class="links" href="#footer">Контакти</a></li>
             </ul>
             <ul class="H-social">
               <li>
-                <a href="#"
-                  ><img
-                    class="social-icon"
-                    src="./style/images/icons/telephone.svg"
-                    alt="telephone"
-                /></a>
+                <a href="#">
+                  <svg class="social-icons">
+                    <use href="./images/icons.svg#telephone"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <svg class="social-icons">
+                    <use href="./images/icons.svg#facebook-f"></use>
+                  </svg>
+                </a>
               </li>
               <li>
                 <a href="#"
-                  ><img
-                    class="social-icon"
-                    src="./style/images/icons/instagram-logo.svg"
-                    alt="instagram"
-                /></a>
-              </li>
-              <li>
-                <a href="#"
-                  ><img
-                    class="social-icon"
-                    src="./style/images/icons/facebook-f.svg"
-                    alt="facebook"
-                /></a>
+                  ><svg class="social-icons">
+                    <use href="./images/icons.svg#instagram-logo"></use>
+                  </svg>
+                </a>
               </li>
             </ul>
           </nav>
@@ -61,14 +58,7 @@
       </div>
     </header>
     <main>
-      <img src="" alt="" />
-      <!--vector-->
-      <!--<img
-          class="bg-shape bg-shape-bottom"
-          src="./style/images/icons/background2.svg"
-          alt=""
-        />-->
-      <section class="hero-section">
+      <section class="hero-section" id="hero-section">
         <div class="container">
           <div class="hero-content">
             <div class="hero-title">
@@ -89,7 +79,7 @@
           </div>
         </div>
       </section>
-      <section class="transform-section">
+      <section class="transform-section" id="transform-section">
         <div class="container">
           <div class="transform-container">
             <div class="text-trsec">
@@ -111,153 +101,152 @@
             <div class="transform-images">
               <img
                 class="transform-img img-top"
-                src="./style/images/photo/before.jpg"
+                src="./images/before.jpg"
                 alt="before"
               />
               <img
                 class="transform-img img-bottom"
-                src="./style/images/photo/after.jpg"
+                src="./images/after.jpg"
                 alt="after"
               />
-              <img
-                class="top-star"
-                src="./style/images/icons/Star top.svg"
-                alt="star top"
-              />
-              <img
-                class="mid-star"
-                src="./style/images/icons/Star maid.svg"
-                alt="star mid"
-              />
-              <img
-                class="bot-star"
-                src="./style/images/icons/Star bot.svg"
-                alt="star bot"
-              />
+              <svg class="top-star">
+                <use href="./images/icons.svg#Startop"></use>
+              </svg>
+              <svg class="mid-star">
+                <use href="./images/icons.svg#Starmid"></use>
+              </svg>
+              <svg class="bot-star">
+                <use href="./images/icons.svg#Starmid"></use>
+              </svg>
             </div>
           </div>
         </div>
       </section>
-      <section class="why-section">
+      <section class="why-section" id="why-section">
+        <img
+          class="background-wave"
+          src="./images/background.svg"
+          alt="background wave"
+        />
         <div class="container">
           <div class="why-container">
             <h2>Чому люди <span class="accent">обирають нас</span></h2>
             <div class="why-block">
               <ul class="why-content">
                 <li>
-                  <article class="why-card">
-                    <img
-                      class="card-icons"
-                      src="./style/images/icons/game-icons_materials-science.svg"
-                      alt="#"
-                    />
+                  <div class="why-card">
+                    <svg class="card-icons">
+                      <use
+                        href="./images/icons.svg#game-icons_materials-science"
+                      ></use>
+                    </svg>
                     <p class="cont-text">
                       Всі наші косметологи мають вищу медичну освіту та стаж
                       роботи від 5 років
                     </p>
-                  </article>
+                  </div>
                 </li>
                 <li>
-                  <article class="why-card">
-                    <img
-                      class="card-icons"
-                      src="./style/images/icons/medicinecosmeticsbottletreatment_109776 1.svg"
-                      alt="#"
-                    />
+                  <div class="why-card">
+                    <svg class="card-icons">
+                      <use
+                        href="./images/icons.svg#medicinecosmeticsbottletreatment_1097761"
+                      ></use>
+                    </svg>
                     <p class="cont-text">
                       Використовуємо тільки професійне обладнання та косметику,
                       перевірену часом
                     </p>
-                  </article>
+                  </div>
                 </li>
                 <li>
-                  <article class="why-card">
-                    <img
-                      class="card-icons"
-                      src="./style/images/icons/crown-light.svg"
-                      alt="#"
-                    />
+                  <div class="why-card">
+                    <svg class="card-icons">
+                      <use href="./images/icons.svg#crown-light"></use>
+                    </svg>
                     <p class="cont-text">
                       Наша мета - підкреслити переваги та приховати недоліки, а
                       не переробити
                     </p>
-                  </article>
+                  </div>
                 </li>
               </ul>
             </div>
           </div>
         </div>
       </section>
-      <section class="procedures-section">
+      <section class="procedures-section" id="procedures-section">
         <div class="container">
           <h2>Наші <span class="accent">процедури</span></h2>
           <div class="procedures__slider-wrapper">
             <button class="arr-button" type="button">
-              <img
-                class="arr"
-                src="./style/images/icons/Arrow left.svg"
-                alt="Arrow left"
-              />
+              <svg class="arr">
+                <use href="./images/icons.svg#Arrowleft"></use>
+              </svg>
             </button>
             <div class="procedures-container">
               <ul class="procedures__list">
                 <li class="procedures__item">
-                  <article class="procedure-card">
+                  <div class="procedure-card">
                     <img
                       class="procedure-card__image"
-                      src="./style/images/photo/mask.png"
+                      src="./images/mask.png"
                       alt="mask"
                     />
                     <p class="procedures-container-text">Маски для обличчя</p>
-                  </article>
+                  </div>
                 </li>
                 <li class="procedures__item">
-                  <article class="procedure-card">
+                  <div class="procedure-card">
                     <img
                       class="procedure-card__image"
-                      src="./style/images/photo/injection.png"
+                      src="./images/injection.png"
                       alt="injection"
                     />
                     <p class="procedures-container-text">
                       Ін'єкції для обличчя
                     </p>
-                  </article>
+                  </div>
                 </li>
                 <li class="procedures__item">
-                  <article class="procedure-card">
+                  <div class="procedure-card">
                     <img
                       class="procedure-card__image"
-                      src="./style/images/photo/cleaning.png"
+                      src="./images/cleaning.png"
                       alt="cleaning"
                     />
                     <p class="procedures-container-text">Очищення обличчя</p>
-                  </article>
+                  </div>
                 </li>
               </ul>
             </div>
             <button class="arr-button">
-              <img
-                class="arr"
-                src="./style/images/icons/Arrow right.svg"
-                alt="Arrow right"
-              />
+              <svg class="arr">
+                <use href="./images/icons.svg#Arrowright"></use>
+              </svg>
             </button>
           </div>
 
           <ul class="pagination">
             <li class="pagination__dot">
-              <img src="./style/images/icons/Circle2.svg" alt="circle" />
+              <svg>
+                <use href="./images/icons.svg#Circle2"></use>
+              </svg>
             </li>
             <li class="pagination__dot">
-              <img src="./style/images/icons/Circle2.svg" alt="circle" />
+              <svg>
+                <use href="./images/icons.svg#Circle2"></use>
+              </svg>
             </li>
             <li class="pagination__dot">
-              <img src="./style/images/icons/Circle3.svg" alt="circle" />
+              <svg>
+                <use href="./images/icons.svg#Circle2"></use>
+              </svg>
             </li>
           </ul>
         </div>
       </section>
-      <section class="finding-section">
+      <section class="finding-section" id="finding-section">
         <div class="container">
           <div class="finding-container">
             <h2>Як нас <span class="accent">знайти</span></h2>
@@ -268,7 +257,6 @@
                   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2540.9400613933917!2d30.5181289!3d50.4422171!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cef8b5f6338d%3A0x25c7f06ad686451c!2z0LHRg9C70YzQstCw0YAg0KLQsNGA0LDRgdCwINCo0LXQstGH0LXQvdC60LAsIDUsINCa0LjRl9CyLCAwMjAwMA!5e0!3m2!1suk!2sua!4v1779981242240!5m2!1suk!2sua"
                   width="605"
                   height="481"
-                  Radius=" 32px"
                   style="border: 0"
                   allowfullscreen=""
                   loading="lazy"
@@ -328,24 +316,24 @@
         </div>
       </section>
     </main>
-    <footer class="footer">
+    <footer class="footer" id="footer">
       <div class="container">
         <div class="F-container">
           <div class="footer-logo-col">
-            <a href="#">
+            <a href="#hero-section">
               <img
                 class="F-logo"
-                src="./style/images/icons/logo.svg"
+                src="./images/logo.svg"
                 alt="Beauty Zone logo"
               />
             </a>
           </div>
           <nav class="F-nav">
             <ul class="f-links">
-              <li><a class="links" href="#">Про нас</a></li>
-              <li><a class="links" href="#">Чому ми</a></li>
-              <li><a class="links" href="#">Наші процедури</a></li>
-              <li><a class="links" href="#">Контакти</a></li>
+              <li><a class="links" href="#transform-section">Про нас</a></li>
+              <li><a class="links" href="#why-section">Чому ми</a></li>
+              <li><a class="links" href="#procedures-section">Наші процедури</a></li>
+              <li><a class="links" href="#finding-section">Контакти</a></li>
             </ul>
           </nav>
           <address class="address">
@@ -365,27 +353,24 @@
             <ul class="social">
               <li>
                 <a href=""
-                  ><img
-                    class="tel"
-                    src="./style/images/icons/telephone.svg"
-                    alt="telephone"
-                /></a>
+                  ><svg class="social-icons-F">
+                    <use href="./images/icons.svg#telephone"></use>
+                  </svg>
+                </a>
               </li>
               <li>
                 <a href=""
-                  ><img
-                    class="facebook"
-                    src="./style/images/icons/facebook-f.svg"
-                    alt="telephone"
-                /></a>
+                  ><svg class="social-icons-F">
+                    <use href="./images/icons.svg#facebook-f"></use>
+                  </svg>
+                </a>
               </li>
               <li>
                 <a href=""
-                  ><img
-                    class="inst"
-                    src="./style/images/icons/instagram-logo.svg"
-                    alt="instagram"
-                /></a>
+                  ><svg class="social-icons-F">
+                    <use href="./images/icons.svg#instagram-logo"></use>
+                  </svg>
+                </a>
               </li>
             </ul>
           </address>
@@ -397,11 +382,7 @@
           </div>
         </div>
       </div>
-      <img
-        class="footer-decor-img"
-        src="./style/images/photo/bottles.png"
-        alt="decor"
-      />
+      <img class="footer-decor-img" src="./images/bottles.png" alt="decor" />
     </footer>
   </body>
 </html>

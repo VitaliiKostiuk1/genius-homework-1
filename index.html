@@ -27,7 +27,9 @@
             <ul class="header-menu">
               <li><a class="links" href="#transform-section">Про нас</a></li>
               <li><a class="links" href="#why-section">Чому ми</a></li>
-              <li><a class="links" href="#procedures-section">Наші процедури</a></li>
+              <li>
+                <a class="links" href="#procedures-section">Наші процедури</a>
+              </li>
               <li><a class="links" href="#footer">Контакти</a></li>
             </ul>
             <ul class="H-social">
@@ -69,7 +71,7 @@
               </h1>
             </div>
             <div class="hero-cta">
-              <button class="main-button" type="button">
+              <button class="main-button" type="button" data-modal-open>
                 <span>Замовити дзвінок</span>
               </button>
               <p class="free-consultaion">
@@ -116,7 +118,7 @@
                 <use href="./images/icons.svg#Starmid"></use>
               </svg>
               <svg class="bot-star">
-                <use href="./images/icons.svg#Starmid"></use>
+                <use href="./images/icons.svg#Starbot"></use>
               </svg>
             </div>
           </div>
@@ -130,7 +132,10 @@
         />
         <div class="container">
           <div class="why-container">
-            <h2>Чому люди <span class="accent">обирають нас</span></h2>
+            <h2>
+              Чому люди <br />
+              <span class="accent">обирають нас</span>
+            </h2>
             <div class="why-block">
               <ul class="why-content">
                 <li>
@@ -278,6 +283,9 @@
                         type="text"
                         placeholder="Ваше ім'я та прізвище"
                         required
+                        minlength="2"
+                        maxlength="70"
+                        pattern="^[a-zA-Zа-яА-ЯіІїЇєЄґҐ\'\-]+\s+[a-zA-Zа-яА-ЯіІїЇєЄґҐ\'\-]+$"
                       />
                     </div>
 
@@ -287,6 +295,7 @@
                         type="tel"
                         placeholder="Ваш номер телефону"
                         required
+                        pattern="^\+380\d{9}$"
                       />
                     </div>
 
@@ -296,6 +305,7 @@
                         type="email"
                         placeholder="Ваша електронна пошта"
                         required
+                        pattern="^[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}$"
                       />
                     </div>
                     <div class="form-button-container">
@@ -332,7 +342,9 @@
             <ul class="f-links">
               <li><a class="links" href="#transform-section">Про нас</a></li>
               <li><a class="links" href="#why-section">Чому ми</a></li>
-              <li><a class="links" href="#procedures-section">Наші процедури</a></li>
+              <li>
+                <a class="links" href="#procedures-section">Наші процедури</a>
+              </li>
               <li><a class="links" href="#finding-section">Контакти</a></li>
             </ul>
           </nav>
@@ -384,5 +396,67 @@
       </div>
       <img class="footer-decor-img" src="./images/bottles.png" alt="decor" />
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button class="modal-btn-close" type="button" data-modal-close>
+       <svg class="close-bth">
+        <use href="./images/icons.svg#close"></use>
+       </svg>
+        </button>
+        <div class="modal-content">
+          <h2 class="modal-title">Замовити<br />дзвінок</h2>
+          <h3 class="modal-subtitle">
+            Запишіться <span class="accent">безкоштовно</span><br />
+            та отримайте подарунок
+          </h3>
+
+          <form action="#" class="modal-form">
+            <div class="form-field-modal">
+              <input
+                class="input"
+                type="text"
+                placeholder="Ваше ім'я та прізвище"
+                required
+                minlength="2"
+                maxlength="70"
+                pattern="^[a-zA-Zа-яА-ЯіІїЇєЄґҐ\'\-]+\s+[a-zA-Zа-яА-ЯіІїЇєЄґҐ\'\-]+$"
+              />
+            </div>
+
+            <div class="form-field-modal">
+              <input
+                class="input"
+                type="tel"
+                placeholder="Ваш номер телефону"
+                required
+                pattern="^\+380\d{9}$"
+              />
+            </div>
+
+            <div class="form-field-modal">
+              <input
+                class="input"
+                type="email"
+                placeholder="Ваша електронна пошта"
+                required
+                pattern="^[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}$"
+              />
+            </div>
+
+            <div class="modal-form-button-container">
+              <button type="submit" class="modal-form-button">
+                Записатись безкоштовно
+              </button>
+
+              <p class="modal-form-terms">
+                Натискаючи на кнопку я погоджуюсь
+                <a href="#">з політикою конфіденційності</a>
+              </p>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>

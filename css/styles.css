@@ -100,6 +100,7 @@ ul {
 .hero-content {
   max-width: 529px;
   padding-top: 16.52px;
+  padding-left: 102px;
 }
 
 .hero-title {
@@ -299,15 +300,9 @@ h2 {
   width: 100%;
   min-height: 1785px;
   top: -260px;
-  transform: translateX(-50%) rotate(-142.77);
   z-index: -1;
   pointer-events: none;
-  background: linear-gradient(
-    38.2,
-    rgba(43, 127, 255, 0.2) 39.74%,
-    rgba(43, 127, 255, 0) 54.16%,
-    rgba(43, 127, 255, 0) 66.66%
-  );
+ 
 }
 
 .why-container {
@@ -368,6 +363,7 @@ h2 {
 }
 
 .procedures__list {
+   flex-shrink: 0;
   display: flex;
   gap: 16px;
   padding: 0;
@@ -376,7 +372,6 @@ h2 {
 }
 
 .procedure-card {
-  flex-shrink: 0;
   width: 344px;
   height: 456px;
   border-radius: 4px 120px 4px 120px;
@@ -388,6 +383,9 @@ h2 {
     rgba(1, 28, 68, 0.73) 72.58%,
     rgba(1, 28, 68, 1) 100%
   );
+  background-size: 100% 60%;
+  background-position: bottom;
+  background-repeat: no-repeat;
 }
 .procedure-card__image {
   position: absolute;

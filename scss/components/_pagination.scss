@@ -1,0 +1,19 @@
+.pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+
+  &__swiper-pagination {
+    width: 11px;
+    height: 11px;
+    background-color: var(--color-secondary-lightgrey);
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+
+  &__swiper-pagination--active {
+    background-color: var(--color-primary-lightblue);
+  }
+}

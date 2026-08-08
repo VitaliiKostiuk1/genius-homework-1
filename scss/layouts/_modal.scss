@@ -1,0 +1,119 @@
+.backdrop {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+  transition:
+    opacity 0.3s ease,
+    visibility 0.3s ease;
+}
+
+.backdrop.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+body.no-scroll {
+  overflow: hidden;
+}
+
+.modal {
+  position: relative;
+  width: 723px;
+  height: 681px;
+  background-image: url('../images/form-bcg.png'), url('../images/Form.jpg');
+  background-position: center;
+  background-size: cover;
+  border-radius: 48px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 64px 24px;
+}
+
+.modal-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 435px;
+  margin: 0 auto;
+}
+
+.modal-title {
+  line-height: 1;
+  text-align: center;
+  color: var(--color-primary-white);
+  margin: 0;
+  margin-bottom: 40px;
+}
+
+.modal-subtitle {
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 1;
+  text-align: center;
+  color: var(--color-primary-white);
+  margin: 0;
+  margin-bottom: 32px;
+}
+
+.modal-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 310px;
+  gap: 24px;
+  margin: 0;
+}
+
+.form-field-modal {
+  width: 100%;
+}
+
+.form-field-modal input {
+  width: 100%;
+  height: 52px;
+  border-radius: 24px;
+  font-size: 13px;
+  border: 2px solid var(--color-secondary-lightgrey);
+  background-color: transparent;
+  color: var(--color-primary-white);
+  padding: 0 16px;
+  outline: transparent;
+}
+
+.form-field-modal input:focus {
+  border-color: var(--color-primary-lightblue);
+}
+
+.form-field-modal input::placeholder {
+  color: var(--color-primary-white);
+}
+
+.modal-form-button-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 281px;
+  gap: 8px;
+  margin: 0 auto;
+}
+
+.modal-form-terms {
+  font-size: 10px;
+  line-height: 1.2;
+  text-align: center;
+  color: var(--color-secondary-lightgrey);
+  margin: 0;
+}
+
+.modal-form-terms a {
+  color: var(--color-secondary-lightgrey);
+}

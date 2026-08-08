@@ -1,0 +1,121 @@
+.header {
+  position: absolute;
+  width: 100%;
+  height: auto;
+  padding-top: 16px;
+  background: none;
+  backdrop-filter: blur(0);
+  display: flex;
+  justify-content: normal;
+
+  @media (min-width: $tablet) {
+    height: 106px;
+    padding-top: 0;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(10px);
+  }
+
+  &__container {
+    margin: 0;
+    width: 100%;
+    max-width: 1239px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 16px;
+
+    @media (min-width: $tablet) {
+      height: auto;
+      display: block;
+      padding: 0;
+    }
+  }
+
+  &__nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-width: 324px;
+    padding: 0;
+
+    @media (min-width: $tablet) {
+      padding: 32px 0;
+    }
+  }
+
+  &__menu {
+    display: none;
+    align-items: center;
+    margin: 0;
+    padding: 10.5px 0;
+
+    @media (min-width: $tablet) {
+      display: flex;
+      gap: 24px;
+    }
+
+    @media (min-width: $desktop) {
+      gap: 56px;
+    }
+
+    &-links {
+      color: var(--color-primary-darkblue);
+      text-decoration: none;
+      transition: 0.2s;
+
+      &:hover {
+        color: var(--color-primary-lightblue);
+        font-weight: 700;
+      }
+    }
+  }
+
+  &__social {
+    display: none;
+    margin: 0;
+    padding: 5px 0;
+
+    @media (min-width: $tablet) {
+      display: flex;
+      gap: 24px;
+    }
+
+    @media (min-width: $desktop) {
+      gap: 32px;
+    }
+
+    &-icons {
+      width: 32px;
+      height: 32px;
+    }
+  }
+
+  &__burger-btn {
+    background: transparent;
+    border: none;
+    padding: 0;
+    display: flex;
+
+    @media (min-width: $tablet) {
+      display: none;
+    }
+
+    &-icon {
+      display: block;
+      width: 24px;
+      height: 24px;
+    }
+  }
+
+  &__logo {
+    width: 57px;
+    height: 30px;
+
+    @media (min-width: $tablet) {
+      width: 74px;
+      height: 42px;
+    }
+  }
+}

@@ -68,12 +68,19 @@
     width: 100%;
     max-width: 320px;
     padding: 40px 0;
-    background-image: url('../images/form-bcg.png'), url('../images/Form.jpg');
+    background-image:
+      url('../images/mobile-form-background.png'), url('../images/Form.jpg');
     background-size: cover;
+    background-repeat: no-repeat;
     background-position: center;
     border-radius: 32px;
 
     @media (min-width: $tablet) {
+      background-image:
+        url('../images/form-bcg.png'), url('../images/Form.jpg');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
       max-width: 423px;
       height: 481px;
       padding: 0;

@@ -3,10 +3,21 @@
   overflow: hidden;
   width: 100%;
   background-color: var(--color-primary-darkblue);
-  background-image: url('../images/footer-bcg.png');
+  background-image: url('../images/mobile-form-background.png');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+
+  @media (min-width: $tablet) {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    background-color: var(--color-primary-darkblue);
+    background-image: url('../images/footer-bcg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
 
   &__main-container {
     display: flex;

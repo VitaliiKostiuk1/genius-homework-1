@@ -682,13 +682,18 @@ ul {
   width: 100%;
   max-width: 320px;
   padding: 40px 0;
-  background-image: url("../images/form-bcg.png"), url("../images/Form.jpg");
+  background-image: url("../images/mobile-form-background.png"), url("../images/Form.jpg");
   background-size: cover;
+  background-repeat: no-repeat;
   background-position: center;
   border-radius: 32px;
 }
 @media (min-width: 768px) {
   .finding-section__appointment-card {
+    background-image: url("../images/form-bcg.png"), url("../images/Form.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
     max-width: 423px;
     height: 481px;
     padding: 0;
@@ -799,10 +804,22 @@ ul {
   overflow: hidden;
   width: 100%;
   background-color: var(--color-primary-darkblue);
-  background-image: url("../images/footer-bcg.png");
+  background-image: url("../images/mobile-form-background.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+}
+@media (min-width: 768px) {
+  .footer {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    background-color: var(--color-primary-darkblue);
+    background-image: url("../images/footer-bcg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
 }
 .footer__main-container {
   display: flex;

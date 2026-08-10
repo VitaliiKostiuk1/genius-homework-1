@@ -5,7 +5,6 @@
   justify-content: center;
   margin: 0;
   padding-top: 104px;
-  padding-bottom: 80px;
 
   @media (min-width: $tablet) {
     padding-top: 176px;
@@ -22,10 +21,12 @@
   max-width: 316px;
   margin: 0 auto;
   gap: 24px;
+  padding-top: 40px;
 
   @media (min-width: $tablet) {
     max-width: 768px;
     gap: 0;
+    padding: 0;
   }
 
   @media (min-width: $desktop) {

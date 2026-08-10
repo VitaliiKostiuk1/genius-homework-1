@@ -56,8 +56,8 @@
 
 .modal-btn-close {
   position: absolute;
-  top: 42px;
-  right: 32px;
+  top: 16px;
+  right: 16px;
   background: transparent;
   border: none;
   cursor: pointer;
@@ -65,16 +65,27 @@
   align-items: center;
   justify-content: center;
   padding: 8px;
-  transition: transform 0.2s;
+  color: var(--color-primary-white);
+  transition: transform 0.2s ease;
+
+  &:hover {
+    transform: scale(1.1);
+  }
+
+  @media (min-width: $tablet) {
+    top: 42px;
+    right: 32px;
+  }
 }
 
 .close-bth {
-  width: 32px;
-  height: 32px;
-}
+  width: 24px;
+  height: 24px;
 
-.modal-btn-close:hover {
-  transform: scale(1.1);
+  @media (min-width: $tablet) {
+    width: 32px;
+    height: 32px;
+  }
 }
 
 .modal-form-button {

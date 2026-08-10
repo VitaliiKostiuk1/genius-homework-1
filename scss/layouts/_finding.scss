@@ -17,7 +17,7 @@
       padding-bottom: 48px;
     }
 
-    @media (min-width: $tablet) {
+    @media (min-width: $desktop) {
       max-width: 1059px;
       margin: 0px auto;
       padding: 96px 0;
@@ -42,7 +42,7 @@
     position: relative;
     width: 100vw;
 
-    @media (min-width: $tablet) {
+    @media (min-width: $desktop) {
       width: 100%;
       max-width: 605px;
     }
@@ -55,6 +55,10 @@
       height: 232px;
 
       @media (min-width: $tablet) {
+        height: 350px;
+      }
+
+      @media (min-width: $desktop) {
         border-radius: 32px;
         height: 481px;
       }

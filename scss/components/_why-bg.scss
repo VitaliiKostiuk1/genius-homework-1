@@ -4,7 +4,7 @@
   background-image: url('../images/background.png');
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: top center;
+  background-position: 40% top;
 
   @media screen and (min-width: $tablet) {
     background-position: top center;
@@ -12,5 +12,6 @@
 
   @media screen and (min-width: $desktop) {
     background-position: top center;
+    background-size: 100% 100%;
   }
 }

@@ -484,7 +484,6 @@ ul {
   justify-content: center;
   margin: 0;
   padding-top: 104px;
-  padding-bottom: 80px;
 }
 @media (min-width: 768px) {
   .why-section {
@@ -502,11 +501,13 @@ ul {
   max-width: 316px;
   margin: 0 auto;
   gap: 24px;
+  padding-top: 40px;
 }
 @media (min-width: 768px) {
   .why-container {
     max-width: 768px;
     gap: 0;
+    padding: 0;
   }
 }
 @media (min-width: 1200px) {
@@ -631,7 +632,7 @@ ul {
 .finding-section__container h2 {
   padding-bottom: 48px;
 }
-@media (min-width: 768px) {
+@media (min-width: 1200px) {
   .finding-section__container {
     max-width: 1059px;
     margin: 0px auto;
@@ -656,7 +657,7 @@ ul {
   position: relative;
   width: 100vw;
 }
-@media (min-width: 768px) {
+@media (min-width: 1200px) {
   .finding-section__map-container {
     width: 100%;
     max-width: 605px;
@@ -670,6 +671,11 @@ ul {
   height: 232px;
 }
 @media (min-width: 768px) {
+  .finding-section__map-container-map {
+    height: 350px;
+  }
+}
+@media (min-width: 1200px) {
   .finding-section__map-container-map {
     border-radius: 32px;
     height: 481px;
@@ -804,7 +810,7 @@ ul {
   overflow: hidden;
   width: 100%;
   background-color: var(--color-primary-darkblue);
-  background-image: url("../images/mobile-form-background.png");
+  background-image: url("../images/mobile-footer-background.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -877,8 +883,14 @@ ul {
 }
 @media (min-width: 768px) {
   .footer__nav {
+    display: none;
+  }
+}
+@media (min-width: 1200px) {
+  .footer__nav {
     order: initial;
     margin-bottom: 0;
+    display: block;
   }
 }
 .footer__links-container {
@@ -1036,6 +1048,7 @@ ul {
   background-color: rgba(0, 0, 0, 0.5);
   z-index: 999;
   transition: opacity 0.3s ease, visibility 0.3s ease;
+  padding: 16px;
 }
 
 .backdrop.is-hidden {
@@ -1050,24 +1063,41 @@ body.no-scroll {
 
 .modal {
   position: relative;
-  width: 723px;
-  height: 681px;
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  padding: 40px 16px;
+  border-radius: 24px;
   background-image: url("../images/form-bcg.png"), url("../images/Form.jpg");
   background-position: center;
   background-size: cover;
-  border-radius: 48px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 64px 24px;
+  overflow-y: auto;
+}
+@media (min-width: 768px) {
+  .modal {
+    width: 723px;
+    max-width: 100%;
+    height: 681px;
+    padding: 64px 24px;
+    border-radius: 48px;
+    overflow-y: visible;
+  }
 }
 
 .modal-content {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 435px;
+  width: 100%;
   margin: 0 auto;
+}
+@media (min-width: 768px) {
+  .modal-content {
+    width: 435px;
+  }
 }
 
 .modal-title {
@@ -1075,26 +1105,42 @@ body.no-scroll {
   text-align: center;
   color: var(--color-primary-white);
   margin: 0;
-  margin-bottom: 40px;
+  margin-bottom: 24px;
+}
+@media (min-width: 768px) {
+  .modal-title {
+    margin-bottom: 40px;
+  }
 }
 
 .modal-subtitle {
-  font-size: 22px;
+  font-size: 18px;
   font-weight: 600;
   line-height: 1;
   text-align: center;
   color: var(--color-primary-white);
   margin: 0;
-  margin-bottom: 32px;
+  margin-bottom: 24px;
+}
+@media (min-width: 768px) {
+  .modal-subtitle {
+    font-size: 22px;
+    margin-bottom: 32px;
+  }
 }
 
 .modal-form {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 310px;
-  gap: 24px;
-  margin: 0;
+  width: 100%;
+  max-width: 310px;
+  gap: 16px;
+}
+@media (min-width: 768px) {
+  .modal-form {
+    gap: 24px;
+  }
 }
 
 .form-field-modal {
@@ -1129,7 +1175,8 @@ body.no-scroll {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 281px;
+  width: 100%;
+  max-width: 281px;
   gap: 8px;
   margin: 0 auto;
 }
@@ -1155,7 +1202,7 @@ body.no-scroll {
   background-color: var(--color-primary-white);
   transform: translateX(100%);
   transition: transform 0.3s;
-  z-index: 2;
+  z-index: 999;
 }
 .mobile-menu.is-open {
   transform: translateX(0);
@@ -1259,8 +1306,8 @@ body.no-scroll {
 
 .modal-btn-close {
   position: absolute;
-  top: 42px;
-  right: 32px;
+  top: 16px;
+  right: 16px;
   background: transparent;
   border: none;
   cursor: pointer;
@@ -1268,16 +1315,28 @@ body.no-scroll {
   align-items: center;
   justify-content: center;
   padding: 8px;
-  transition: transform 0.2s;
+  color: var(--color-primary-white);
+  transition: transform 0.2s ease;
+}
+.modal-btn-close:hover {
+  transform: scale(1.1);
+}
+@media (min-width: 768px) {
+  .modal-btn-close {
+    top: 42px;
+    right: 32px;
+  }
 }
 
 .close-bth {
-  width: 32px;
-  height: 32px;
+  width: 24px;
+  height: 24px;
 }
-
-.modal-btn-close:hover {
-  transform: scale(1.1);
+@media (min-width: 768px) {
+  .close-bth {
+    width: 32px;
+    height: 32px;
+  }
 }
 
 .modal-form-button {
@@ -1416,7 +1475,7 @@ body.no-scroll {
   background-image: url("../images/background.png");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: top center;
+  background-position: 40% top;
 }
 @media screen and (min-width: 768px) {
   .background-wave {
@@ -1426,5 +1485,6 @@ body.no-scroll {
 @media screen and (min-width: 1200px) {
   .background-wave {
     background-position: top center;
+    background-size: 100% 100%;
   }
 }/*# sourceMappingURL=main.css.map */
